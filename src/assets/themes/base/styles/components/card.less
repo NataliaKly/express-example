@@ -1,0 +1,42 @@
+.card {
+    margin: auto;
+    padding: 5px;
+    flex: 0 0 25%;
+
+    &__column {
+        flex-basis: 70%;
+        &._title {
+            flex-basis: 30%;
+            color: @color-grey;
+        }
+    }
+
+    &__image {
+        width: 200px;
+        height: 200px;
+        background: url('/src/assets/themes/base/images/icon.png') no-repeat center;
+        background-size: cover;
+        margin: 0 auto;
+    }
+
+    &__row {
+        display: flex;
+        margin: 10px;
+    }
+
+    &__title {
+        margin-bottom: 10px;
+        background: @color-blue-deep-dark;
+        color: #fff;
+        padding: 5px 10px;
+        line-height: 40px;
+        font-size: 24px;
+    }
+
+    &__wrapper {
+        display: flex;
+        flex-direction: column;
+        border: 2px solid @color-blue-deep-dark;
+        border-radius: 4px;
+    }
+}

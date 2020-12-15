@@ -1,0 +1,36 @@
+.header {
+    display: flex;
+    align-items: center;
+    line-height: 60px;
+    background-color: @color-blue-deep-dark;
+    color: @color-white;
+    font-size: 16px;
+    padding: 0 40px;
+
+    &__logo {
+        font-size: 28px;
+        font-family: monospace;
+    }
+
+    &__menu {
+        display: flex;
+        text-transform: uppercase;
+        &-item {
+            padding-left: 40px;
+            color: @color-white;
+
+            &:hover {
+                color: @color-blue-light;
+                cursor: pointer;
+            }
+        }
+    }
+
+    &__basket {
+        margin-left: auto;
+
+        &:hover svg {
+            fill: @color-blue-light;
+        }
+    }
+}
